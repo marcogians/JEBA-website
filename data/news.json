@@ -1,0 +1,80 @@
+{
+  "collection": "articles",
+  "items": [
+    {
+      "id": "n-2026-07-24-ai-workshop",
+      "slug": "workshop-intro-ai",
+      "status": "published",
+      "publishedAt": "2026-07-24",
+      "featured": true,
+      "cover": {
+        "url": "images/news1.jpg",
+        "alt": { "it": "Studenti durante il workshop di AI", "en": "Students during the AI workshop" }
+      },
+      "category": { "it": "Formazione", "en": "Training" },
+      "title": {
+        "it": "Workshop: Introduzione all'Intelligenza Artificiale",
+        "en": "Workshop: Introduction to Artificial Intelligence"
+      },
+      "excerpt": {
+        "it": "Una giornata dedicata agli studenti del Politecnico per esplorare le applicazioni dell'AI nel mondo dell'impresa.",
+        "en": "A day dedicated to Politecnico students exploring AI applications in the business world."
+      },
+      "body": {
+        "it": "Una giornata dedicata agli studenti del Politecnico per esplorare le applicazioni dell'AI nel mondo dell'impresa, con casi studio reali e sessioni pratiche.",
+        "en": "A day dedicated to Politecnico students exploring AI applications in the business world, with real case studies and hands-on sessions."
+      },
+      "author": "JEBA Team"
+    },
+    {
+      "id": "n-2026-07-15-recruiting",
+      "slug": "candidature-aperte",
+      "status": "published",
+      "publishedAt": "2026-07-15",
+      "featured": false,
+      "cover": {
+        "url": "images/news2.jpg",
+        "alt": { "it": "Recruiting day JEBA", "en": "JEBA recruiting day" }
+      },
+      "category": { "it": "Recruiting", "en": "Recruiting" },
+      "title": {
+        "it": "Aperte le candidature per entrare in JEBA",
+        "en": "Applications now open to join JEBA"
+      },
+      "excerpt": {
+        "it": "Cerchiamo studenti motivati che vogliano contribuire alla crescita dell'associazione attraverso progetti ed eventi.",
+        "en": "We're looking for motivated students to help the association grow through projects and events."
+      },
+      "body": {
+        "it": "Cerchiamo studenti motivati che vogliano contribuire alla crescita dell'associazione attraverso progetti ed eventi.",
+        "en": "We're looking for motivated students to help the association grow through projects and events."
+      },
+      "author": "JEBA Team"
+    },
+    {
+      "id": "n-2026-06-30-partnership",
+      "slug": "nuova-partnership",
+      "status": "published",
+      "publishedAt": "2026-06-30",
+      "featured": false,
+      "cover": {
+        "url": "images/news3.jpg",
+        "alt": { "it": "Firma della partnership", "en": "Partnership signing" }
+      },
+      "category": { "it": "Partnership", "en": "Partnership" },
+      "title": {
+        "it": "JEBA firma una nuova partnership con un'azienda del territorio",
+        "en": "JEBA signs a new partnership with a local company"
+      },
+      "excerpt": {
+        "it": "Un nuovo accordo per offrire ai nostri membri progetti reali su cui applicare le competenze acquisite.",
+        "en": "A new agreement to give our members real projects to apply their skills to."
+      },
+      "body": {
+        "it": "Un nuovo accordo per offrire ai nostri membri progetti reali su cui applicare le competenze acquisite.",
+        "en": "A new agreement to give our members real projects to apply their skills to."
+      },
+      "author": "JEBA Team"
+    }
+  ]
+}

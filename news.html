@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizie | JEBA</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Notizie | JEBA">
+    <meta property="og:description" content="Scopri le notizie, le iniziative e gli aggiornamenti di JEBA - Junior Enterprise Bari.">
+    <meta property="og:image" content="images/logo-JEBA.png">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Notizie | JEBA">
+    <meta name="twitter:description" content="Scopri le notizie, le iniziative e gli aggiornamenti di JEBA - Junior Enterprise Bari.">
+    <meta name="twitter:image" content="images/logo-JEBA.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        (function () {
+            var t = localStorage.getItem("jeba-theme");
+            if (!t && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+            if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        })();
+    </script>
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Vai al contenuto</a>
+
+    <header class="navbar">
+      <div class="nav-shell">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-JEBA.png" alt="JEBA - Junior Enterprise Bari"></a>
+            <nav class="nav-menu" aria-label="Navigazione principale">
+                <a href="news.html" data-i18n="nav.news">Notizie</a>
+                <a href="index.html#chi-siamo" data-i18n="nav.about">Chi siamo</a>
+                <a href="eventi.html" data-i18n="nav.events">Eventi</a>
+                <a href="index.html#contatti" class="nav-cta"><span data-i18n="nav.cta">Parla con noi</span><svg class="nav-cta-arrow" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6.4 13.6 13.6 6.4M8.1 6.4h5.5v5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </nav>
+            <div class="nav-actions">
+                <div class="nav-preferences" aria-label="Preferenze">
+                    <div class="language-switch" role="group" aria-label="Selettore lingua">
+                        <span class="language-switch-highlight" aria-hidden="true"></span>
+                        <button type="button" data-lang-option="it" class="active" aria-pressed="true">IT</button>
+                        <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+                    </div>
+                    <span class="nav-divider" aria-hidden="true"></span>
+                    <label class="theme-switch">
+                        <input type="checkbox" data-theme-toggle aria-label="Attiva/disattiva tema scuro">
+                        <span class="switch-track" aria-hidden="true">
+                            <span class="switch-stars"></span>
+                            <span class="switch-thumb">
+                                <i data-lucide="sun" class="theme-icon sun"></i>
+                                <i data-lucide="moon" class="theme-icon moon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <button class="menu-toggle" data-menu-toggle aria-expanded="false" data-i18n-aria="nav.menu.aria" aria-label="Apri il menu"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="mobile-menu" data-mobile-menu>
+        <nav aria-label="Navigazione mobile">
+            <a href="news.html" data-i18n="nav.news">Notizie</a>
+            <a href="index.html#chi-siamo" data-i18n="nav.about">Chi siamo</a>
+            <a href="eventi.html" data-i18n="nav.events">Eventi</a>
+            <a href="index.html#contatti" class="nav-cta nav-cta-mobile"><span data-i18n="nav.cta">Parla con noi</span><svg class="nav-cta-arrow" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6.4 13.6 13.6 6.4M8.1 6.4h5.5v5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </nav>
+    </div>
+
+    <main id="main">
+        <section class="section" style="padding-top: var(--space-6);">
+            <div class="container">
+                <div class="section-title">
+                    <span class="section-tag" data-i18n="news.tag">NEWS</span>
+                    <h2 data-i18n="news.page.title">Notizie</h2>
+                    <p data-i18n="news.page.subtitle">Tutti gli aggiornamenti da JEBA.</p>
+                </div>
+
+                <!-- Nessun data-limit: mostra tutta la collezione pubblicata -->
+                <div class="news-grid" data-cms="news" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <img src="images/logo-JEBA-footer.png" alt="JEBA" class="footer-logo">
+                <p class="footer-description" data-i18n="footer.network">Parte del network Junior Enterprise Italy</p>
+            </div>
+            <div>
+                <h4 data-i18n="footer.follow">Seguici!</h4>
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/company/jebari/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>JEBA - Consulting</span></a></li>
+                    <li><a href="https://www.instagram.com/jeba.bari/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i><span>@jeba.bari</span></a></li>
+                    <li><a href="https://www.facebook.com/juniorenterprisebari/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i><span>JEBA - Consulting</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="nav.contact">Contatti</h4>
+                <ul><li><a href="mailto:info@jebari.it"><i data-lucide="mail"></i>info@jebari.it</a></li></ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><span data-i18n="footer.rights">© 2026 JEBA - Junior Enterprise Bari. Tutti i diritti riservati.</span></div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.468.0"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/reveal.js" defer></script>
+    <script src="js/cms.js" defer></script>
+    <script>
+        window.addEventListener("load", () => { if (window.lucide) lucide.createIcons(); });
+        document.addEventListener("jeba:cms-rendered", () => { if (window.lucide) lucide.createIcons(); });
+    </script>
+</body>
+</html>

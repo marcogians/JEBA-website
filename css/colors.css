@@ -1,0 +1,211 @@
+/* ============================================================
+   JEBA — DESIGN TOKENS
+   Un'unica fonte di verità per colori, tipografia, spaziature.
+   Light/Dark gestiti tramite [data-theme] su <html>, persistito
+   in localStorage da js/theme.js.
+   ============================================================ */
+
+:root{
+
+    color-scheme: light;
+
+    /* ---- Brand ---- */
+    --primary:#2EAFD9;
+    --primary-hover:#249dc3;
+    --primary-rgb:46,175,217;
+    --on-primary:#FFFFFF;
+    /* Tinta soft del brand, per hover e sfondi tenui */
+    --primary-soft:rgba(46,175,217,.10);
+    --primary-soft-strong:rgba(46,175,217,.18);
+
+    /* ---- Superfici (light mode) ---- */
+    --background:#FFFFFF;
+    --surface:#F8FAFC;
+    --surface-elevated:#FFFFFF;
+    --surface-sunken:#F1F5F9;
+    --white:#FFFFFF;
+
+    /* ---- Testo (light mode) ---- */
+    --text:#0F172A;
+    --text-secondary:#64748B;
+    --text-muted:#94A3B8;
+    --text-inverse:#FFFFFF;
+
+    /* ---- UI ---- */
+    --border:#E2E8F0;
+    --border-strong:#CBD5E1;
+    --shadow:0 10px 30px rgba(15,23,42,.08);
+    --shadow-lg:0 20px 60px rgba(15,23,42,.14);
+    --overlay-scrim:rgba(15,23,42,.82);
+
+    /* ---- Navbar / pillola "liquid glass" ---- */
+    --nav-bg:#FFFFFF;
+    --nav-bg-rgb:255,255,255;
+    --nav-text:#0F172A;
+    --nav-border:#E2E8F0;
+    --nav-border-rgb:226,232,240;
+    --glass-border-rgb:255,255,255;
+    --glass-border-alpha:.8;
+    --glass-shadow-rgb:15,23,42;
+    --nav-shadow:0 4px 18px rgba(15,23,42,.06);
+    --glass-bg:rgba(255,255,255,.62);
+    --glass-border:rgba(255,255,255,.85);
+    --glass-shadow:
+        0 18px 45px rgba(15,23,42,.14),
+        0 3px 10px rgba(15,23,42,.06),
+        inset 0 1px 0 rgba(255,255,255,.92);
+    --glass-bg-fallback:rgba(255,255,255,.95);
+    /* Vetro delle card (sezione "Our approach") */
+    --glass-card-bg:rgba(255,255,255,.55);
+    --glass-card-border:rgba(255,255,255,.75);
+    --glass-card-shadow:
+        0 30px 70px rgba(15,23,42,.14),
+        0 4px 14px rgba(15,23,42,.06),
+        inset 0 1px 0 rgba(255,255,255,.9);
+    --glass-card-fallback:rgba(255,255,255,.94);
+    --approach-canvas:#F1F5F9;
+    --glass-tint-a:rgba(46,175,217,.30);
+    --glass-tint-b:rgba(29,143,208,.22);
+    --glass-tint-c:rgba(120,190,255,.20);
+
+    /* ---- CTA "Parla con noi" (volutamente diverso dalla navbar) ---- */
+    --cta-bg:linear-gradient(135deg,#0F2A44 0%,#123E63 55%,#0C5F86 100%);
+    --cta-text:#FFFFFF;
+    --cta-shadow:0 8px 20px rgba(15,42,68,.28);
+    --cta-shadow-hover:0 12px 26px rgba(15,42,68,.34);
+    --cta-ring:rgba(15,42,68,.22);
+
+    /* ---- Footer ---- */
+    --footer-bg:#07121E;
+    --footer-text:rgba(255,255,255,.85);
+    --footer-muted:rgba(255,255,255,.58);
+    --footer-border:rgba(255,255,255,.1);
+
+    /* ---- Hero ---- */
+    --hero-gradient:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.18), transparent 45%),
+        linear-gradient(135deg,#2EAFD9 0%,#35B7E0 45%,#1D8FD0 100%);
+    --hero-gradient-opacity:.82;
+    --hero-veil:linear-gradient(180deg, rgba(7,57,79,.08) 0%, rgba(10,103,143,.12) 52%, rgba(4,42,63,.28) 100%);
+    --media-brightness:1;
+    --map-filter:none;
+
+    /* ---- Radius / spacing scale ---- */
+    --radius-sm:10px;
+    --radius:16px;
+    --radius-lg:24px;
+    --radius-pill:999px;
+
+    --space-1:.5rem;
+    --space-2:1rem;
+    --space-3:1.5rem;
+    --space-4:2rem;
+    --space-6:3rem;
+    --space-8:4rem;
+
+    /* ---- Tipografia ---- */
+    --font-display:'Cormorant Garamond', Georgia, serif;
+    --font-body:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* ---- Animazione ---- */
+    --transition:.3s ease;
+    --transition-fast:.18s ease;
+    --ease-out-soft:cubic-bezier(.22,.61,.36,1);
+    --ease-spring:cubic-bezier(.22,1.1,.36,1);
+
+    /* ---- Z-index scale ---- */
+    --z-navbar:999;
+    --z-mobile-menu:998;
+    --z-overlay:50;
+}
+
+/* ============================================================
+   DARK MODE
+   Attivato via [data-theme="dark"] su <html> (vedi js/theme.js).
+   Palette rivista: superfici più neutre e su tre livelli
+   (background < surface < elevated) per una gerarchia di
+   elevazione leggibile, testo con contrasto AA, primario
+   schiarito perché il ciano pieno su fondo scuro era troppo denso.
+   ============================================================ */
+[data-theme="dark"]{
+
+    color-scheme: dark;
+
+    --primary:#48C4EA;
+    --primary-hover:#6FD3F1;
+    --primary-rgb:72,196,234;
+    --on-primary:#06222E;
+    --primary-soft:rgba(72,196,234,.12);
+    --primary-soft-strong:rgba(72,196,234,.22);
+
+    --background:#0A111A;
+    --surface:#111A26;
+    --surface-elevated:#16202E;
+    --surface-sunken:#0D1622;
+
+    --text:#E9EFF6;
+    --text-secondary:#9AABBE;
+    --text-muted:#6F8098;
+
+    --border:#22303F;
+    --border-strong:#31435A;
+    --shadow:0 10px 30px rgba(0,0,0,.42);
+    --shadow-lg:0 24px 60px rgba(0,0,0,.55);
+    --overlay-scrim:rgba(6,11,18,.88);
+
+    --nav-bg:#0C1520;
+    --nav-bg-rgb:12,21,32;
+    --nav-text:#E9EFF6;
+    --nav-border:#22303F;
+    --nav-border-rgb:34,48,63;
+    --glass-border-rgb:255,255,255;
+    --glass-border-alpha:.18;
+    --glass-shadow-rgb:0,0,0;
+    --nav-shadow:0 4px 22px rgba(0,0,0,.4);
+    --glass-bg:rgba(16,26,38,.58);
+    --glass-border:rgba(255,255,255,.14);
+    --glass-shadow:
+        0 18px 45px rgba(0,0,0,.45),
+        0 3px 10px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.10);
+    --glass-bg-fallback:rgba(14,23,34,.96);
+    --glass-card-bg:rgba(26,39,55,.52);
+    --glass-card-border:rgba(255,255,255,.12);
+    --glass-card-shadow:
+        0 30px 70px rgba(0,0,0,.5),
+        0 4px 14px rgba(0,0,0,.3),
+        inset 0 1px 0 rgba(255,255,255,.10);
+    --glass-card-fallback:rgba(22,32,46,.96);
+    --approach-canvas:#0B121C;
+    --glass-tint-a:rgba(72,196,234,.26);
+    --glass-tint-b:rgba(29,143,208,.24);
+    --glass-tint-c:rgba(90,140,220,.20);
+
+    /* In dark il CTA diventa il ciano brand pieno: risalta sul
+       vetro scuro molto più di un blu notte. */
+    --cta-bg:linear-gradient(135deg,#48C4EA 0%,#2EAFD9 55%,#1D8FD0 100%);
+    --cta-text:#05202B;
+    --cta-shadow:0 8px 22px rgba(46,175,217,.30);
+    --cta-shadow-hover:0 12px 28px rgba(46,175,217,.42);
+    --cta-ring:rgba(72,196,234,.30);
+
+    --footer-bg:#070D15;
+    --footer-text:rgba(233,239,246,.82);
+    --footer-muted:rgba(233,239,246,.55);
+    --footer-border:rgba(255,255,255,.08);
+
+    /* Hero meno abbagliante di notte: gradiente più profondo,
+       velo più marcato, media leggermente attenuati. */
+    --hero-gradient:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.10), transparent 45%),
+        linear-gradient(135deg,#0F6E92 0%,#12809F 45%,#0A4F76 100%);
+    --hero-gradient-opacity:.88;
+    --hero-veil:linear-gradient(180deg, rgba(4,16,26,.28) 0%, rgba(4,20,32,.38) 52%, rgba(2,10,18,.62) 100%);
+    --media-brightness:.9;
+    --map-filter:invert(.92) hue-rotate(180deg) saturate(.78) contrast(.92) brightness(.95);
+}
+
+/* Rispetta le preferenze di sistema quando l'utente non ha
+   ancora espresso una scelta esplicita (nessuna chiave in
+   localStorage): gestito lato JS assegnando [data-theme] già
+   al primo paint, per evitare flash of wrong theme. */

@@ -1,0 +1,71 @@
+{
+  "collection": "events",
+  "items": [
+    {
+      "id": "e-2026-11-15-workshop",
+      "slug": "workshop-ingegneria-management",
+      "status": "upcoming",
+      "startDate": "2026-11-15",
+      "endDate": null,
+      "location": { "it": "Politecnico di Bari", "en": "Politecnico di Bari" },
+      "cover": {
+        "url": "images/loc1.jpg",
+        "alt": { "it": "Locandina workshop", "en": "Workshop poster" }
+      },
+      "type": { "it": "Workshop", "en": "Workshop" },
+      "title": {
+        "it": "Workshop Ingegneria & Management",
+        "en": "Engineering & Management Workshop"
+      },
+      "excerpt": {
+        "it": "Incontro con professionisti del settore per analizzare case study reali.",
+        "en": "A meeting with industry professionals to analyze real case studies."
+      },
+      "registrationUrl": "#"
+    },
+    {
+      "id": "e-2026-12-03-recruiting",
+      "slug": "recruiting-day",
+      "status": "upcoming",
+      "startDate": "2026-12-03",
+      "endDate": null,
+      "location": { "it": "Politecnico di Bari", "en": "Politecnico di Bari" },
+      "cover": {
+        "url": "images/loc2.jpg",
+        "alt": { "it": "Locandina recruiting day", "en": "Recruiting day poster" }
+      },
+      "type": { "it": "Recruiting", "en": "Recruiting" },
+      "title": {
+        "it": "Recruiting Day JEBA",
+        "en": "JEBA Recruiting Day"
+      },
+      "excerpt": {
+        "it": "Apertura delle candidature per i nuovi membri dell'associazione.",
+        "en": "Applications open for new association members."
+      },
+      "registrationUrl": "#"
+    },
+    {
+      "id": "e-2026-04-10-hackathon",
+      "slug": "hackathon-primavera",
+      "status": "past",
+      "startDate": "2026-04-10",
+      "endDate": "2026-04-11",
+      "location": { "it": "Politecnico di Bari", "en": "Politecnico di Bari" },
+      "cover": {
+        "url": "images/loc3.jpg",
+        "alt": { "it": "Locandina hackathon", "en": "Hackathon poster" }
+      },
+      "type": { "it": "Hackathon", "en": "Hackathon" },
+      "title": {
+        "it": "Hackathon di Primavera",
+        "en": "Spring Hackathon"
+      },
+      "excerpt": {
+        "it": "24 ore no-stop per sviluppare soluzioni innovative in team.",
+        "en": "A 24-hour, non-stop team challenge to build innovative solutions."
+      },
+      "registrationUrl": "#"
+    }
+  ]
+}
