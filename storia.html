@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La nostra storia | JEBA</title>
+    <meta name="description" content="La storia di JEBA - Junior Enterprise Bari.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function () {
+            var t = localStorage.getItem("jeba-theme");
+            if (!t && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+            if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        })();
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Vai al contenuto</a>
+    <div class="site-progress" data-site-progress role="progressbar" aria-label="Avanzamento della pagina" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="site-progress-bar" data-site-progress-bar></span></div>
+
+    <header class="navbar">
+      <div class="nav-shell">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="images/logo-JEBA.png" alt="JEBA - Junior Enterprise Bari"></a>
+            <nav class="nav-menu" aria-label="Navigazione principale">
+                <a href="index.html#news" data-i18n="nav.news">Notizie</a>
+                <a href="index.html#chi-siamo" data-i18n="nav.about">Chi siamo</a>
+                <a href="eventi.html" data-i18n="nav.events">Eventi</a>
+                <a href="index.html#contatti" class="nav-cta"><span data-i18n="nav.cta">Parla con noi</span><svg class="nav-cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.4 13.6 13.6 6.4M8.1 6.4h5.5v5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </nav>
+            <div class="nav-actions">
+                <div class="nav-preferences" aria-label="Preferenze">
+                    <div class="language-switch" role="group" aria-label="Selettore lingua">
+                        <span class="language-switch-highlight" aria-hidden="true"></span>
+                        <button type="button" data-lang-option="it" class="active" aria-pressed="true">IT</button>
+                        <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+                    </div>
+                    <span class="nav-divider" aria-hidden="true"></span>
+                    <label class="theme-switch"><input type="checkbox" data-theme-toggle aria-label="Attiva/disattiva tema scuro"><span class="switch-track" aria-hidden="true"><span class="switch-stars"></span><span class="switch-thumb"><i data-lucide="sun" class="theme-icon sun"></i><i data-lucide="moon" class="theme-icon moon"></i></span></span></label>
+                </div>
+                <button class="menu-toggle" data-menu-toggle aria-expanded="false" data-i18n-aria="nav.menu.aria" aria-label="Apri il menu"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" data-mobile-menu>
+        <nav aria-label="Navigazione mobile">
+            <a href="index.html#news" data-i18n="nav.news">Notizie</a>
+            <a href="index.html#chi-siamo" data-i18n="nav.about">Chi siamo</a>
+            <a href="eventi.html" data-i18n="nav.events">Eventi</a>
+            <a href="index.html#contatti" class="nav-cta"><span data-i18n="nav.cta">Parla con noi</span><svg class="nav-cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.4 13.6 13.6 6.4M8.1 6.4h5.5v5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </nav>
+    </div>
+
+    <main id="main" class="history-page">
+        <section class="history-hero">
+            <div class="container">
+                <span class="section-tag history-kicker" data-i18n="history.tag">LA NOSTRA STORIA</span>
+                <h1 data-i18n="history.title">Una storia nata per imparare facendo.</h1>
+                <p class="history-lead" data-i18n="history.lead">JEBA nasce al Politecnico di Bari dall’iniziativa di studenti che vogliono trasformare la formazione universitaria in esperienza concreta, creando un ponte tra università, imprese e territorio.</p>
+            </div>
+        </section>
+
+        <section class="history-story">
+            <div class="container history-story-grid">
+                <div class="history-story-label">
+                    <span class="section-tag" data-i18n="history.story.tag">DA DOVE PARTIAMO</span>
+                    <h2 data-i18n="history.story.title">Dalle aule alle esperienze reali.</h2>
+                </div>
+                <div class="history-story-copy">
+                    <p data-i18n="history.story.p1">JEBA, Junior Enterprise Bari, nasce nel 2021 ed è la prima Junior Enterprise della Puglia. Fin dall’inizio il progetto si fonda sul principio del learning by doing: mettere in pratica ciò che si studia, lavorando su progetti, iniziative e collaborazioni reali.</p>
+                    <p data-i18n="history.story.p2">L’idea è semplice: la crescita non avviene soltanto sui libri. Avviene quando competenze, persone e problemi concreti si incontrano. Per questo JEBA costruisce occasioni in cui gli studenti possono assumersi responsabilità, collaborare e confrontarsi con il mondo professionale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-timeline">
+            <div class="container">
+                <div class="history-timeline-head">
+                    <span class="section-tag" data-i18n="history.timeline.tag">NEL TEMPO</span>
+                    <h2 data-i18n="history.timeline.title">I momenti che ci hanno portato fin qui.</h2>
+                    <p data-i18n="history.timeline.intro">Una linea essenziale per raccontare l’evoluzione di JEBA, senza separare la nostra storia dalle persone che la rendono possibile.</p>
+                </div>
+                <div class="history-line">
+                    <article class="history-item"><div class="history-year">2021</div><div><h3 data-i18n="history.timeline.2021.title">Nasce JEBA</h3><p data-i18n="history.timeline.2021.text">Un gruppo di studenti del Politecnico di Bari avvia la prima Junior Enterprise della Puglia.</p></div></article>
+                    <article class="history-item"><div class="history-year" data-i18n="history.timeline.today.title">Oggi</div><div><h3 data-i18n="history.timeline.today.title">Oggi</h3><p data-i18n="history.timeline.today.text">JEBA continua a crescere attraverso persone, progetti, formazione e connessioni con il territorio.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-values">
+            <div class="container">
+                <div class="section-title" style="margin-bottom: var(--space-6);">
+                    <span class="section-tag" data-i18n="history.values.tag">IL NOSTRO MODO DI FARE</span>
+                    <h2 data-i18n="history.values.title">Tre principi che restano.</h2>
+                </div>
+                <div class="history-values-grid">
+                    <article class="history-value"><span>01</span><h3 data-i18n="history.values.learning.title">Learning by doing</h3><p data-i18n="history.values.learning.text">Impariamo attraverso responsabilità, progetti e confronto con situazioni reali.</p></article>
+                    <article class="history-value"><span>02</span><h3 data-i18n="history.values.network.title">Connect</h3><p data-i18n="history.values.network.text">Creiamo connessioni tra studenti, aziende, università e community.</p></article>
+                    <article class="history-value"><span>03</span><h3 data-i18n="history.values.impact.title">Impact</h3><p data-i18n="history.values.impact.text">Trasformiamo idee e competenze in iniziative che generano valore.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-cta">
+            <div class="container">
+                <h2 data-i18n="history.cta.title">La prossima esperienza può iniziare da qui.</h2>
+                <p data-i18n="history.cta.text">Scopri gli eventi, incontra la community e continua il percorso con JEBA.</p>
+                <a href="eventi.html" class="btn-primary" data-i18n="history.cta.button">Scopri gli eventi</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><img src="images/logo-JEBA-footer.png" alt="JEBA" class="footer-logo"></div>
+            <div><h4 data-i18n="footer.follow">Seguici!</h4><ul class="footer-social"><li><a href="https://www.linkedin.com/company/jebari/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>JEBA - Consulting</span></a></li><li><a href="https://www.instagram.com/jeba.bari/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i><span>@jeba.bari</span></a></li><li><a href="https://www.facebook.com/juniorenterprisebari/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i><span>JEBA - Consulting</span></a></li></ul></div>
+            <div><h4 data-i18n="nav.contact">Contatti</h4><ul class="footer-social"><li><a href="mailto:info@jeba.it" target="_blank" rel="noopener"><i class="fa fa-envelope"></i><span>info@jeba.it</span></a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span data-i18n="footer.rights">© 2026 JEBA - Junior Enterprise Bari. Tutti i diritti riservati.</span></div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.468.0"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/reveal.js" defer></script>
+    <script>window.addEventListener("load",()=>{if(window.lucide)lucide.createIcons();});</script>
+</body>
+</html>

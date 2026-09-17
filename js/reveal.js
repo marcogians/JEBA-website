@@ -42,12 +42,13 @@
         { selector: ".team-grid > .team-card", variant: "card", stagger: true, trigger: "scroll" },
         { selector: ".news-grid > .news-card", variant: "card", stagger: true, trigger: "scroll" },
         { selector: ".events-grid > .event-card", variant: "card", stagger: true, trigger: "scroll" },
+        { selector: ".experience-grid > .experience-card", variant: "card", stagger: true, trigger: "scroll" },
 
         // Titoli di sezione: un elemento solo, nessuno stagger
         {
             selector: [
                 ".section-header", ".section-title",
-                ".approach-section-heading", ".contact-header"
+                ".approach-section-heading", ".contact-header", ".experience-heading", ".history-timeline-head"
             ].join(", "),
             variant: "fade", stagger: false, trigger: "scroll"
         },
